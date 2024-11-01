@@ -1,0 +1,103 @@
+/* Style de base */
+body {
+    background-color: rgb(240, 240, 240);
+    color: rgb(50, 50, 50);
+    font-family: Courier;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 700px; /* Largeur par défaut */
+    margin: 40px auto; /* Centrage horizontal avec marges automatiques */
+    padding: 0 20px;
+}
+
+/* Media queries pour rendre la page responsive */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 90%; /* Utilisation d'un pourcentage pour une meilleure flexibilité */
+  }
+}
+
+.card-white {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #348795;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #348795;
+}
+
+.button-link {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #348795;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: fit-content;
+}
+
+.button-link:hover {
+    background-color: #D6822E;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #348795;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #D6822E;
+}
+
